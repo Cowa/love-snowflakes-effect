@@ -25,19 +25,16 @@ return function(width, height, maxParticles)
       p.y = p.y + math.cos(angle + p.d) + 1 + p.r / 2
       p.x = p.x + math.sin(angle) * 2
 
-      if p.x > width + 5 or p.x < -5 or p.y > height then
-        if p.y > height then
-          p.x = math.random() * width
-          p.y = -10
-        else
-          -- Exit from right
-          if (math.sin(angle) > 0) then
-            p = { x = -5, y = math.random() * height, r = p.r, d = p.d }
+      if p.y > height then
+        p.x = math.random() * width
+        p.y = -10
 
-          -- Exit from left
-          else
-            p = { x = width + 5, y = math.random() * height, r = p.r, d = p.d};
-          end
+      elseif p.x > width + 5 or p.x < -5 then
+        -- Exit from right
+        if (math.sin(angle) > 0) then p.x = -5
+
+        -- Exit from left
+        else p.x = width + 5
         end
       end
     end
