@@ -19,7 +19,7 @@ return function(width, height, maxParticles)
   end
 
   function module:update(dt)
-  	angle = angle + 0.01
+    angle = angle + 0.01
 
     for i, p in pairs(snowParticles) do
       p.y = p.y + math.cos(angle + p.d) + 1 + p.r / 2
