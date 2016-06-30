@@ -1,9 +1,7 @@
 # Snowflakes effect for Löve
 > Let it snow in your Löve games
 
-## Demo
-
-Watch the demo [here](https://www.youtube.com/watch?v=U_lnHH8dTN8) (YouTube)
+<p align="center"><img src="https://cloud.githubusercontent.com/assets/1422403/16505509/a88401a6-3f1d-11e6-8fbc-0a2d4e7848a1.gif"/></p>
 
 ## Usage
 
