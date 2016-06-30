@@ -12,13 +12,13 @@ Watch the demo [here](https://www.youtube.com/watch?v=U_lnHH8dTN8) (YouTube)
 width = 800
 height = 600
 
--- Number of snowflakes 
+-- Number of snowflakes
 maxParticles = 50
 
-local snow = require('snow')(width, height, maxParticles)
+local snow = require('snow')
 
 function love.load()
-  snow:load()
+  snow:load(width, height, maxParticles)
 end
 
 function love.update(dt)
